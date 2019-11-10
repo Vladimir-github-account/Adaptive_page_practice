@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page layout</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<header id="pageHeader">
+    <div class="pageHeaderNav">
+        <div class="mainLogo">
+            <img src="./assets/css/img/logo.png" alt="logo">
+        </div>
+        <div class="navIconContainer">
+            <a href="#" class="navIcon">
+                <span class="verticalAlignHelper"></span><img src="./assets/css/icons/magnify.png" alt="search">
+            </a><a href="#" class="navIcon">
+            <span class="verticalAlignHelper"></span><img src="./assets/css/icons/bell.png" alt="notifications">
+        </a><a href="#" class="navIcon">
+            <span class="verticalAlignHelper"></span><img src="./assets/css/icons/menu.png" alt="menu">
+        </a>
+        </div>
+    </div>
+</header>
+<div class="pageHeaderBackgroundContainer ">
+</div>
+<div class="pageInfoContainer">
+
+    <div class="pageInfoHeader">
+        <div class="navIconContainer2">
+            <a href="#" class="navIcon2">
+                <span class="verticalAlignHelper"></span><img src="./assets/css/icons/camera.png"
+                                                              alt="Upload photography">
+            </a>
+        </div>
+        <input type="button" value="+ POST A QUESTION/POLL" id="newPostButton">
+    </div>
+
+    <div class="mainContent">
+        <div class="userInfo">
+            <div class="profilePictureContainer">
+                <div class="navIconContainer2">
+                    <a href="#" class="navIcon2">
+                        <span class="verticalAlignHelper"></span><img src="./assets/css/icons/camera.png"
+                                                                      alt="Upload photography">
+                    </a>
+                </div>
+            </div>
+            <h2 class="userProfileName mtop15">
+                Meghan Rivera
+            </h2>
+            <span class="userLocation mtop15">
+            <img src="./assets/css/icons/map-marker.png"
+                 alt="Location">
+                Zeeland
+            </span>
+            <div class="userStats">
+
+                <div class="scoreContainer mtop15">
+                    <h5>SCORE</h5>
+                    <p><span class="large">242</span> +15 this week</p>
+                </div>
+                <div class="badgesContainer mtop15">
+                    <h5>BADGES</h5>
+                    <div class="badgesList">
+                        <div class="badgeItem">
+                            <div class="navIconContainer3">
+                                <a href="#" class="navIcon3">
+                                    <span class="verticalAlignHelper"></span><img src="./assets/css/img/badge2.png"
+                                                                                  alt="Badge">
+                                </a>
+                            </div>
+                            <span class="badgeName">Coolio</span>
+                        </div>
+                        <div class="badgeItem">
+                            <div class="navIconContainer3">
+                                <a href="#" class="navIcon3">
+                                    <span class="verticalAlignHelper"></span><img src="./assets/css/img/badge2.png"
+                                                                                  alt="Badge">
+                                </a>
+                            </div>
+                            <span class="badgeName">Miss Spice</span>
+                        </div>
+                        <div class="badgeItem">
+                            <div class="navIconContainer3">
+                                <a href="#" class="navIcon3">
+                                    <span class="verticalAlignHelper"></span><img src="./assets/css/img/badge2.png"
+                                                                                  alt="Badge">
+                                </a>
+                            </div>
+                            <span class="badgeName">Girl Boss</span>
+                        </div>
+                        <div class="badgeItem">
+                            <div class="navIconContainer3">
+                                <a href="#" class="navIcon3">
+                                    <span class="verticalAlignHelper"></span><img src="./assets/css/img/badge2.png"
+                                                                                  alt="Badge">
+                                </a>
+                            </div>
+                            <span class="badgeName">Style Spy</span>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="showAllBadges">
+                    See all badges
+                </a>
+            </div>
+            <footer id="userInfoFooter">
+                <a href="#" class="viewProfile">View profile as ></a>
+            </footer>
+        </div>
+        <div class="postsContainer">
+            <div class="listTypesOfPost">
+                <input type="checkbox" id="showUserPosts" checked>
+
+                <label for="showUserPosts">
+                    Your posts
+                </label>
+                <input type="checkbox" id="showLikedPosts">
+                <label for="showLikedPosts">
+                    Liked posts
+                </label>
+                <input type="checkbox" id="showSavedPosts">
+                <label for="showSavedPosts" class="savedPostsLabel">
+                    Saved posts
+                </label>
+                <hr>
+            </div>
+            <div class="filterSelect">
+                <span>Show</span> <select name="filterSelect" id="filterSelect">
+                <option value="value1" selected>All posts</option>
+                <option value="value2">Last 30 days</option>
+            </select>
+            </div>
+            <div class="posts">
+                <div class="postItem">
+                    <div class="postItemHeader">
+                        <div class="postUserInfoContainer">
+                            <div class="postUserAvatarContainer">
+
+                            </div>
+                            <h5 class="postUserName"></h5>
+                            <h6 class="postCreatedTime"></h6>
+                        </div>
+                        <div class="tagsContainer">
+                            <div class="tagItem"></div>
+                        </div>
+                        <a href="#" class="optionsIcon"><img src="./assets/css/icons/dots-vertical.png"
+                                                             alt="Options"></a>
+                    </div>
+                    <div class="postItemContent">
+                        <p class="postText"></p>
+                        <div class="topAnswer">
+                            <p class="topAnswerText"></p>
+                        </div>
+                    </div>
+                    <footer class="postItemFooter">
+
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

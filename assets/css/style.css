@@ -1,0 +1,330 @@
+body {
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+  / background-color: coral;
+    width: 100%;
+}
+
+a{
+    color:rgb(30,30,30);
+}
+
+/*HEADER*/
+
+#pageHeader{
+    min-width: 100%;
+    position: fixed;
+    z-index: 1;
+
+}
+
+.pageHeaderNav{
+    padding: 10px 65px;
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+}
+
+.mainLogo {
+
+}
+
+.mainLogo > img {
+    width: 60px;
+    object-fit: cover;
+}
+
+.navIconContainer {
+    margin:auto 0;
+}
+
+.navIcon {
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+}
+
+.navIcon + .navIcon {
+    margin-left: 25px;
+}
+
+.navIcon > img{
+
+}
+
+.verticalAlignHelper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+/*BLUR BACKGROUND*/
+
+.pageHeaderBackgroundContainer {
+    filter: blur(5px);
+    background-image:url("./img/background tree.jpg");
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    min-height: 300px;
+    min-width: 100%;
+    margin: 80px 0 auto 0;
+    align-self: center;
+}
+
+/*PAGE INFO*/
+
+.pageInfoContainer {
+    margin: -300px auto 0;
+    padding: 0 55px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width:1980px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+/*PAGE INFO HEADER*/
+
+.pageInfoHeader {
+    background-image:url("./img/background tree.jpg");
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    height: 300px;
+    min-height: 300px;
+    box-sizing: border-box;
+    min-width: 100%;
+    background-color: black;
+    position: relative;
+    z-index: 0;
+    padding: 15px 15px 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.navIconContainer2 {
+    margin-left:auto ;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.7);
+    box-sizing: border-box;
+    text-align: center;
+    width: 48px;
+    cursor: pointer;
+}
+
+.navIcon2 {
+    display: inline-block;
+    height: 48px;
+    width: 48px;
+    text-align: center;
+}
+
+ input[type="button"]#newPostButton{
+    border-radius: 25px;
+    color: white;
+    font-size: 16px;
+    background-color: mediumaquamarine;
+    padding: 10px 20px;
+    border: 0;
+}
+
+ /*MAIN CONTENT*/
+
+ .mainContent {
+     width: 100%;
+     box-sizing: border-box;
+     display: flex;
+ }
+
+
+ /*LEFT BLOCK USER'S INFO*/
+
+ .userInfo {
+     background-color: #f54293;
+     display: flex;
+     flex-direction: column;
+     padding: 0 35px;
+     justify-content: space-between;
+     align-items: center;
+     box-sizing: border-box;
+     max-width: 380px;
+ }
+
+ .profilePictureContainer {
+     box-sizing: border-box;
+     width: 175px;
+     height: 175px;
+     border-radius: 50%;
+    // overflow: hidden;
+     background-image: url("img/userAvatar.jpg");
+     background-size: cover;
+     background-repeat: no-repeat;
+  //   background-position: center; /*test*/
+     margin-top: -75px;
+     position: relative;
+     z-index: 1;
+     display: flex;
+     justify-content: flex-end;
+     align-items: flex-end;
+ }
+
+.userProfileName {
+    color: white;
+    font-size: 18px;
+}
+
+.userLocation {
+    color: #ededed;
+}
+
+.userStats {
+    padding-top: 15px;
+    padding-bottom: 25px;
+}
+
+.scoreContainer > h5 {
+    padding: 5px 0;
+}
+
+.scoreContainer > p {
+    color: #ededed;
+}
+
+.large {
+    font-size: 36px;
+}
+
+.badgesContainer {
+
+}
+
+.mtop15 {
+    margin-top: 15px;
+}
+
+.badgesContainer > h5 {
+    padding: 5px 0;
+}
+
+.badgesList {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: -15px;
+}
+
+.badgeItem {
+    margin:10px 0 10px 15px;
+    text-align: center;
+    color: #ededed;
+}
+
+.navIconContainer3 {
+    margin-left:auto ;
+    border-radius: 50%;
+    background-color: white;
+    box-sizing: border-box;
+    text-align: center;
+    width: 80px;
+    cursor: pointer;
+}
+
+.navIcon3 {
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.navIcon3 >img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.badgeItem + .badgeItem {
+  /  margin:0 0 0 20px;
+}
+
+footer#userInfoFooter {
+    width: 100%;
+    padding: 10px 35px;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.viewProfile {
+    color: #ededed;
+    text-decoration: none;
+}
+
+/*USER POSTS*/
+
+.postsContainer {
+    width: 100%;
+    background: white;
+    padding: 15px 0 10px 20px;
+}
+
+.listTypesOfPost{
+
+}
+
+label ~ label {
+    margin-left: 20px;
+}
+
+hr{
+    opacity: 0.4;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+input[type="checkbox"]:checked + label {
+    font-weight: bold;
+    border-bottom:1px solid #f54293;
+    padding-bottom:8px ;
+}
+
+.filterSelect {
+    text-align: right;
+    padding-right:15px ;
+}
+
+select {
+    display: inline-block;
+    box-sizing: border-box;
+    min-width: 110px;
+    font-size: 16px;
+    border-radius: 15px;
+    padding:10px 5px 10px 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(./icons/chevron-down.png) 90% no-repeat #f54293;
+    overflow: hidden;
+    white-space: nowrap;
+    border: 0;
+  }
+
+.filterSelect > span {
+    margin-right:15px;
+}
+
+.posts {
+    display: flex;
+}
+
+.postItem {
+    display: flex;
+}
