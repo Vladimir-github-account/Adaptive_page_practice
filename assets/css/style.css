@@ -65,7 +65,7 @@ a{
 
 .pageHeaderBackgroundContainer {
     filter: blur(5px);
-    background-image:url("./img/background tree.jpg");
+    background-image:url("./img/backgroundImage.jpg");
     background-position: center;
     background-repeat:no-repeat;
     background-size: cover;
@@ -93,7 +93,7 @@ a{
 /*PAGE INFO HEADER*/
 
 .pageInfoHeader {
-    background-image:url("./img/background tree.jpg");
+    background-image:url("./img/backgroundImage.jpg");
     background-position: center;
     background-repeat:no-repeat;
     background-size: cover;
@@ -132,7 +132,7 @@ a{
     border-radius: 25px;
     color: white;
     font-size: 16px;
-    background-color: mediumaquamarine;
+    background-color: #02c3a6;
     padding: 10px 20px;
     border: 0;
 }
@@ -148,8 +148,8 @@ a{
 
  /*LEFT BLOCK USER'S INFO*/
 
- .userInfo {
-     background-color: #f54293;
+ .sidebar {
+     background-color: #ec4980;
      display: flex;
      flex-flow: column nowrap;
      padding: 0 35px;
@@ -157,7 +157,7 @@ a{
      align-items: center;
      box-sizing: border-box;
      max-width: 380px;
-     max-height: 650px;
+     max-height: 550px;
  }
 
  .profilePictureContainer {
@@ -178,9 +178,14 @@ a{
      align-items: flex-end;
  }
 
+ .userAbout {
+     box-sizing: border-box;
+ }
+
 .userProfileName {
     color: white;
     font-size: 18px;
+    line-height: 150%;
 }
 
 .userLocation {
@@ -262,7 +267,9 @@ a{
     max-width: 100%;
     box-sizing: border-box
 }
-
+.showAllBadges {
+    color: #c03061;
+}
 footer#userInfoFooter {
     width: 100%;
     padding: 10px 35px;
@@ -319,7 +326,7 @@ select {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    background: url(./icons/chevron-down.png) 90% no-repeat #f54293;
+    background: url(./icons/chevron-down.png) 90% no-repeat #ec4980;
     overflow: hidden;
     white-space: nowrap;
     border: 0;
@@ -432,7 +439,7 @@ footer.postItemFooter{
 }
 
 .postItemFeedback {
-    color: rgb(236, 64, 122);
+    color: #f81e68;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1025px) {
