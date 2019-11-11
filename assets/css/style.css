@@ -4,6 +4,7 @@ body {
     flex-direction: column;
   / background-color: coral;
     width: 100%;
+    font-family: 'Roboto', sans-serif;
 }
 
 a{
@@ -150,12 +151,13 @@ a{
  .userInfo {
      background-color: #f54293;
      display: flex;
-     flex-direction: column;
+     flex-flow: column nowrap;
      padding: 0 35px;
      justify-content: space-between;
      align-items: center;
      box-sizing: border-box;
      max-width: 380px;
+     max-height: 650px;
  }
 
  .profilePictureContainer {
@@ -219,6 +221,7 @@ a{
     flex-wrap: wrap;
     width: 100%;
     margin-left: -15px;
+    justify-content: stretch;
 }
 
 .badgeItem {
@@ -233,19 +236,19 @@ a{
     background-color: white;
     box-sizing: border-box;
     text-align: center;
-    width: 80px;
+    width: 60px;
     cursor: pointer;
 }
 
 .navIcon3 {
     display: inline-block;
-    height: 80px;
-    width: 80px;
+    height: 60px;
+    width: 60px;
     text-align: center;
     overflow: hidden;
 }
 
-.navIcon3 >img {
+.navIcon3 > img {
     object-fit: cover;
     width: 100%;
     height: 100%;
@@ -255,10 +258,15 @@ a{
   /  margin:0 0 0 20px;
 }
 
+.badgeItem > span{
+    max-width: 100%;
+    box-sizing: border-box
+}
+
 footer#userInfoFooter {
     width: 100%;
     padding: 10px 35px;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0,0,0,0.3);
 }
 
 .viewProfile {
@@ -275,7 +283,7 @@ footer#userInfoFooter {
 }
 
 .listTypesOfPost{
-
+    margin-left: 10px;
 }
 
 label ~ label {
@@ -293,7 +301,7 @@ input[type="checkbox"]{
 input[type="checkbox"]:checked + label {
     font-weight: bold;
     border-bottom:1px solid #f54293;
-    padding-bottom:8px ;
+    padding-bottom:7px ;
 }
 
 .filterSelect {
@@ -323,8 +331,117 @@ select {
 
 .posts {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   / align-items: center;
 }
 
 .postItem {
     display: flex;
+    flex-flow: column nowrap;
+    padding: 10px 10px 0 10px;
+    border: 1px solid rgba(200,200,200,0.6);
+    margin: 10px;
 }
+
+.postItem + .postItem {
+
+}
+
+.postItemHeader {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.postUserInfoContainer {
+    display: flex;
+}
+
+.postUserAvatarContainer {
+    background-image: url("./img/userCustomAv.jpg");
+    width: 35px;
+    height: 35px;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.headers {
+    padding-left:10px;
+}
+
+.postUserName {
+
+}
+
+.postCreatedTime {
+
+}
+
+.postItemTagsAndOptions {
+
+}
+
+.tagsContainer {
+    display: inline-block;
+}
+
+.tagItem {
+    background-color: rgba(200,200,200,0.4);
+    padding: 4px 10px;
+    border-radius: 15px;
+}
+
+.tagItem > span {
+    padding: 0 5px;
+}
+
+.postItemContent {
+    padding: 15px 5px 10px 0;
+    font-size: 16px;
+    line-height: 135%;
+}
+
+p.postText {
+    box-sizing: border-box;
+    max-width: 350px;
+}
+
+.topAnswer {
+    padding:15px 0 20px 35px
+}
+
+.topAnswer > h6 {
+    color: lightseagreen;
+}
+
+p.topAnswerText {
+    color: rgb(135,135,135);
+    max-width: 320px;
+}
+
+footer.postItemFooter{
+    background-color:rgba(200,200,200,0.4);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px;
+    margin:0 -10px 0 -10px;
+}
+
+.postItemFeedback {
+    color: rgb(236, 64, 122);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1025px) {
+    p.postText {
+        max-width: 270px;
+    }
+
+    p.topAnswerText {
+        max-width: 230px;
+    }
+}
+
