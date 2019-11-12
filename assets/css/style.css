@@ -450,5 +450,17 @@ footer.postItemFooter{
     p.topAnswerText {
         max-width: 230px;
     }
+
+    .sidebar {
+        padding: 0 25px;
+    }
+
+    footer#userInfoFooter{
+        padding: 10px 25px;
+    }
+
+    .postsContainer{
+        padding: 10px 0 5px 15px;
+    }
 }
 
