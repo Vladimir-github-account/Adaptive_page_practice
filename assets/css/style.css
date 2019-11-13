@@ -61,6 +61,9 @@ a{
     vertical-align: middle;
 }
 
+.showProfile {
+    display: none;
+}
 /*BLUR BACKGROUND*/
 
 .pageHeaderBackgroundContainer {
@@ -172,7 +175,7 @@ a{
   //   background-position: center; /*test*/
      margin-top: -75px;
      position: relative;
-     z-index: 1;
+     z-index: 0;
      display: flex;
      justify-content: flex-end;
      align-items: flex-end;
@@ -270,7 +273,7 @@ a{
 .showAllBadges {
     color: #c03061;
 }
-footer#userInfoFooter {
+footer#sidebarFooter {
     width: 100%;
     padding: 10px 35px;
     background-color: rgba(0,0,0,0.3);
@@ -286,11 +289,11 @@ footer#userInfoFooter {
 .postsContainer {
     width: 100%;
     background: white;
-    padding: 15px 0 10px 20px;
+    padding: 15px 0 10px 30px;
 }
 
 .listTypesOfPost{
-    margin-left: 10px;
+
 }
 
 label ~ label {
@@ -348,7 +351,7 @@ select {
     flex-flow: column nowrap;
     padding: 10px 10px 0 10px;
     border: 1px solid rgba(200,200,200,0.6);
-    margin: 10px;
+    margin: 10px 5px 10px 0;
 }
 
 .postItem + .postItem {
@@ -455,12 +458,52 @@ footer.postItemFooter{
         padding: 0 25px;
     }
 
-    footer#userInfoFooter{
+    footer#sidebarFooter{
         padding: 10px 25px;
     }
 
     .postsContainer{
         padding: 10px 0 5px 15px;
     }
+}
+
+@media screen and (max-width: 767px) {
+    .mainLogo > img {
+        width: 45px;
+    }
+    .sidebar {
+        display: none;
+    }
+    .showProfile {
+        display: inline-block;
+    }
+
+    .navIcon + .navIcon {
+        margin-left: 10px;
+    }
+
+    .pageHeaderNav{
+        padding: 5px 15px;
+    }
+
+    .pageHeaderBackgroundContainer{
+        display: none;
+    }
+
+    .pageInfoContainer {
+        margin: 0;
+        padding: 0;
+    }
+
+    .pageInfoHeader {
+        min-height: 200px;
+        margin-top: 55px;
+    }
+
+    .postsContainer {
+        padding: 10px 5px;
+    }
+
+
 }
 
